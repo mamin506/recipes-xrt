@@ -8,7 +8,7 @@
 # The following license files were not able to be identified and are
 # represented as "Unknown" below, you will need to check them yourself:
 #   COPYING
-LICENSE = "Unknown"
+LICENSE = "FreeBSD"
 LIC_FILES_CHKSUM = "file://COPYING;md5=232257bbf7320320725ca9529d3782ab"
 
 SRC_URI = "git://github.com/OCL-dev/ocl-icd.git;protocol=https"

@@ -9,8 +9,8 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=fa343562af4b9b922b8d7fe7b0b6d000 \
 #SRC_URI = "git://git@github.com/Xilinx/XRT.git;protocol=ssh;branch=master"
 SRC_URI = "git://git@github.com/mamin506/XRT.git;protocol=https;branch=yocto"
 
-PV = "2.1.0+git${SRCPV}"
-SRCREV = "fb020c4a501697bbc074e682442193cb66a847f9"
+PV = "2.2.0+git${SRCPV}"
+SRCREV = "5d6d02cf2cad98c070b8b0b6df8c44dedb63a135"
 
 S = "${WORKDIR}/git"
 
