@@ -6,11 +6,10 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=fa343562af4b9b922b8d7fe7b0b6d000 \
                     file://src/runtime_src/driver/xclng/xrt/user_gem/LICENSE;md5=3b83ef96387f14655fc854ddc3c6bd57 \
                     file://src/runtime_src/driver/xclng/tools/xbutil/LICENSE;md5=d273d63619c9aeaf15cdaf76422c4f87"
 
-#SRC_URI = "git://git@github.com/Xilinx/XRT.git;protocol=ssh;branch=master"
-SRC_URI = "git://git@github.com/mamin506/XRT.git;protocol=https;branch=yocto"
+SRC_URI = "git://git@github.com/Xilinx/XRT.git;protocol=ssh;branch=master"
 
 PV = "2.2.0+git${SRCPV}"
-SRCREV = "5d6d02cf2cad98c070b8b0b6df8c44dedb63a135"
+SRCREV = "e9fa36422b4590d55eccee02b20173cc305e620c"
 
 S = "${WORKDIR}/git"
 
@@ -20,7 +19,7 @@ inherit cmake pkgconfig
 DEPENDS = "libdrm opencl-headers ocl-icd boost util-linux"
 RDEPENDS_${PN} = "bash ocl-icd boost"
 
-FILES_${PN}-dev += "opt/xilinx/xrt/include/* opt/xilinx/xrt/lib/*.so"
+FILES_${PN}-dev += "opt/xilinx/xrt/include/* opt/xilinx/xrt/lib/*"
 FILES_${PN} += "opt/*"
 
 # Avoid "no GNU_HASH" error
