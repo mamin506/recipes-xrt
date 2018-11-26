@@ -9,7 +9,11 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=fa343562af4b9b922b8d7fe7b0b6d000 \
 SRC_URI = "git://git@github.com/Xilinx/XRT.git;protocol=ssh;branch=master"
 
 PV = "2.2.0+git${SRCPV}"
-SRCREV = "e9fa36422b4590d55eccee02b20173cc305e620c"
+# Since this commit, XRT cmake is yocto friendly
+#SRCREV = "e9fa36422b4590d55eccee02b20173cc305e620c"
+
+# Use latest version
+SRCREV = "${AUTOREV}"
 
 S = "${WORKDIR}/git"
 
